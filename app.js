@@ -17,7 +17,7 @@ app.get('/:date',function(req,res){
 
 
     if(dateRegex.test(date)){
-        res.json({unix:Date.parse(date),date:date});
+        res.json({unix:Date.parse(date),natural:date});
     }
     else if(timestampRegex.test(date)){
        var ts=date;
@@ -40,7 +40,7 @@ app.get('/:date',function(req,res){
 
        var formatedDate=months[date.getMonth()+1]+' '+day+', '+date.getFullYear();
 
-       res.json({unix:Date.parse(date),date:formatedDate});
+       res.json({unix:Date.parse(date),natural:formatedDate});
     }else{
         res.json({unix:null,date:null});
     }
