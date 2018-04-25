@@ -1,10 +1,36 @@
 <DOCTYPE html>
 <html>
     <head>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel='stylesheet' href='/stylesheets/index.css'/>
     </head>
     <body>
-        <h1>My API</h1>
+        <div class="App">
+            <h1>API Basejump: Timestamp microservice</h1>
+            <div>
+                <h2>User stories:</h2>
+                <ol>
+                    <li>I can pass a string as a parameter, and it will check to see whether that string contains either a <span class='keywords'> unix timestamp </span> or a <span class='keywords'>natural languages</span> date (example: January 1, 2016)</li>
+                    <li>If it does, it returns both the <span class='keywords'>Unix timestamp </span>  and the <span class='keywords'> natural language</span>  form of that date.</li>
+                    <li>If it does not contain a date or <span class='keywords'>Unix timestamp</span>, it returns null for those properties.</li>
+                </ol>
+            </div>
+            <div>
+                <h2>Example usage:</h2>
+                <p>
+                    <a class='link' href="http://localhost:3000/December%2015,%202015" target='_blank'>http://localhost:3000/December%2015,%202015</a>
+                </p> 
+                <p>
+                    <a class='link' href="http://localhost:3000/1450137600000" target='_blank'>http://localhost:3000/1450137600000</a>       
+                </p>  
+            </div>
+            <div>
+                <h2>Example output:</h2>
+                <code>{ "unix": 1450137600, "natural": "December 15, 2015" }</code>
+            </div>
+        </div>
+        <footer class='copyright'>
+            <p>Designed and coded by with <span class="fa fa-heart heart"></span> by <a class='link-copyright' href="https://codepen.io/BlessedCamper" target='_blank'>Gilbert</a></p>
+        </footer>
     </body>
-
 </html>

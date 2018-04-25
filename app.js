@@ -20,6 +20,7 @@ app.get('/:date',function(req,res){
         res.json({unix:Date.parse(date),date:date});
     }
     else if(timestampRegex.test(date)){
+       var ts=date;
        var date=new Date(parseInt(date));
        var months={
         "01":"January",
@@ -35,8 +36,9 @@ app.get('/:date',function(req,res){
         "11":"November",
         "12":"December",
        }
+       var day=parseInt(date.getDate())+1
 
-       var formatedDate=months[date.getMonth()+1]+' '+date.getDay()+', '+date.getFullYear();
+       var formatedDate=months[date.getMonth()+1]+' '+day+', '+date.getFullYear();
 
        res.json({unix:Date.parse(date),date:formatedDate});
     }else{

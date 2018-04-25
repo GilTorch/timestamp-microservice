@@ -1,4 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi|IBM+Plex+Mono|Quicksand');
 body{
-    background-color:'#111';
+    background:linear-gradient(180deg,#E80C7A,#B0095D);
+    color:black;
+}
+
+.App{
+    background-color:white;
+    width:40%;
+    border:1px solid #eee;
+    border-radius:10px;
+    text-align: center;
+    margin-top:2%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:3%;
+    box-shadow:0px 0px 20px #555;
+}
+
+h1{
+    font-size:2em;
+    color:#E80C7A;
+    font-family: 'Gugi', cursive;
+}
+
+h2{
+    font-size:1.5em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.keywords{
+    font-style: italic;
+}
+
+ol,p,a,code{
+    font-size:1em;
+  
+}
+
+ol,p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+ol{
+    text-align: justify;
+}
+
+code,.link{
+    background-color:#B0095D;
+    padding:1%;
+    border-radius:4px;
+    color:#FFF;
+    font-size:0.9em;
+    font-family:'IBM Plex Mono',monospace;
+}
+
+.copyright{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
     color:white;
+}
+
+.heart,.link-copyright{
+    color:#0CE80C;
+}
+
+.link-copyright{
+    font-size:1.2em;
 }
